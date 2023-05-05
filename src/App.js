@@ -1,25 +1,53 @@
-import logo from './logo.svg';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import Home from './pages/Home';
+import React from 'react';
+import Head from './components/Head';
+import Products from './pages/Products';
+import CreateProducts from './pages/CreateProducts';
+import UpdateProducts from './pages/UpdateProducts';
+import GamesStore from './pages/GamesStore';
+import GamesProfile from './pages/GamesProfile';
+
+
+
+
+
+class App extends React.Component {
+
+  render() {
+    return (
+
+      <Router>
+        <Head />
+        <Switch>
+          <Route path="/game-profile/:gameNumber" component={GamesProfile} />
+          <Route path="/update-products/:gameNumber" component={UpdateProducts} />
+          < Route path="/create-product">
+            <CreateProducts />
+          </Route>
+          < Route path="/admin-product">
+            <Products />
+          </Route>
+          <Route path="/game-store">
+            <GamesStore/>
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
+
+
+    )
+  }
+
 }
 
 export default App;
