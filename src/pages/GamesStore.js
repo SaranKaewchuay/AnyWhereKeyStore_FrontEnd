@@ -10,7 +10,7 @@ class GamesStore extends React.Component {
         this.state = {
             data: [],
             gameCategory: "",
-
+            gameName : ""
         }
     }
 
@@ -44,6 +44,14 @@ class GamesStore extends React.Component {
 
     }
 
+    searchName = () => {
+        axios.get("http://localhost:8081/admin/getByName/" + this.state.gameName).then((res) => {
+            this.setState({ data: res.data.data });
+        }).catch((error) => {
+            console.log(error);
+        });
+    }
+
     componentWillMount() {
         const scriptTag = document.createElement("script");
         scriptTag.src = "assets/js/main.js";
@@ -58,6 +66,22 @@ class GamesStore extends React.Component {
         this.setState({
             [name]: value
         });
+    }
+
+    searchChange = (e) => {
+        console.log(e.target.name, e.target.value);
+        let name = e.target.name;
+        let value = e.target.value;
+
+        console.log("value = ",value)
+        this.setState({
+            [name]: value
+        });
+        this.searchName()
+        if(!value){ 
+            this.getData()
+        }
+
     }
     render() {
         return (
@@ -76,7 +100,7 @@ class GamesStore extends React.Component {
                                     <div className="uk-grid uk-child-width-1-6@xl uk-child-width-1-3@l uk-child-width-1-2@s uk-flex-middle uk-grid-small" data-uk-grid>
                                         <div className="uk-width-1-1">
                                             <div className="search">
-                                                <div className="search__input"><i className="ico_search"></i><input type="search" name="search" placeholder="Search" /></div>
+                                                <div className="search__input"><i className="ico_search"></i><input type="search" name="gameName" placeholder="Search" onChange={this.searchChange}/></div>
                                                 <div className="search__btn"><button type="button"><i className="ico_microphone"></i></button></div>
                                             </div>
                                         </div>
