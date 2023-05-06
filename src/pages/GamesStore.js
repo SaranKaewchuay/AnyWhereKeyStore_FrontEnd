@@ -77,9 +77,11 @@ class GamesStore extends React.Component {
         this.setState({
             [name]: value
         });
-        this.searchName()
+        
         if(!value){ 
             this.getData()
+        }else{
+            this.searchName()
         }
 
     }
