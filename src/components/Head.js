@@ -21,7 +21,7 @@ class Head extends React.Component {
                         
                         <div class="page-header__content">
                             <div class="page-header__search">
-                                <div class="sidebar-box">
+                                <div class="page-header__action">
                                     <ul class="uk-nav">
                                         <li><Link to="/" ><i class="ico_home"></i><span>Home</span></Link></li>
                                         <li class="uk-nav-header">Main</li>
