@@ -53,9 +53,6 @@ class Products extends React.Component {
   render() {
     return (
       <div>
-        {/* <aside class="sidebar is-show" id="sidebar">
-          <Menu />
-        </aside> */}
         <div class="mt-150 ml-mr">
           <div class="card shadow mb-4">
             <div class="card-header py-3">

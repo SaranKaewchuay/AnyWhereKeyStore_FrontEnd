@@ -59,9 +59,6 @@ class GamesProfile extends React.Component {
             <div class="page-store">
                 <div class="page-wrapper">
                     <div class="page-content">
-                        {/* <aside class="sidebar is-show" id="sidebar">
-                            <Menu />
-                        </aside> */}
                         <main class="page-main">
                             <ul class="uk-breadcrumb">
                                 <li><Link to="/game-store"><span data-uk-icon="chevron-left"></span><span>Back to Store</span></Link></li>

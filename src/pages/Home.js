@@ -35,11 +35,6 @@ class Home extends React.Component {
             <div className="page-home">
                 <div className="page-wrapper">
                     <div className="page-content">
-
-                        {/* <aside className="sidebar is-show" id="sidebar">
-                            <Menu />
-                        </aside> */}
-
                         <main className="page-main">
                             <div className="uk-grid" data-uk-grid>
                                 <div className="uk-width-2-3@xl">

@@ -90,9 +90,6 @@ class GamesStore extends React.Component {
             <div className="page-store">
                 <div className="page-wrapper">
                     <div className="page-content">
-                        {/* <aside className="sidebar is-show" id="sidebar">
-                            <Menu />
-                        </aside> */}
                         <main className="page-main">
                             <div className="widjet --filters">
                                 <div className="widjet__head">

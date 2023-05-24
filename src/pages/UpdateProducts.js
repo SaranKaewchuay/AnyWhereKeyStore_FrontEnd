@@ -75,9 +75,6 @@ class UpdateProducts extends React.Component {
     return (
       <div>
         <div>
-          {/* <aside className="sidebar is-show" id="sidebar">
-            <Menu />
-          </aside> */}
           <div className="mt-150 ml mr mb-5">
             <div classNameName="row">
               <div classNameName="col-md-6">
