@@ -98,7 +98,7 @@ class GamesStore extends React.Component {
   };
   render() {
     return (
-      <div className="page-community">
+      <div class="m-4" style={{ paddingTop: '110px' }}>
         <div className="page-home">
           <div>
             <div className="page-content">
