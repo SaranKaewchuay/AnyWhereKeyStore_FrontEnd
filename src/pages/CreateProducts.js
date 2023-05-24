@@ -52,9 +52,9 @@ class CreateProducts extends React.Component {
     return (
       <div>
         <div>
-          <aside className="sidebar is-show" id="sidebar">
+          {/* <aside className="sidebar is-show" id="sidebar">
             <Menu />
-          </aside>
+          </aside> */}
           <div className="mt-150 ml mr mb-5">
             <div classNameName="row">
               <div classNameName="col-md-6">

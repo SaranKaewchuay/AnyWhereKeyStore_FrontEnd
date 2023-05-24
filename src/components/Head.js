@@ -31,7 +31,10 @@ class Head extends React.Component {
                                 </div>
                             </div>
                             <div class="page-header__action">
-                            <Link to="/login" type="submit" class="btn" style={{ backgroundColor: "#012738", color: "white" }}><span>Login</span></Link>
+                                <Link to="/"  class="action-btn"><i class="ico_home"></i><span>Home</span></Link>
+                                <Link to="/game-store" class="action-btn"><i class="ico_store"></i><span>Game Store</span></Link>
+                                <Link to="/admin-product" class="action-btn"><i class="ico_community"></i><span>Admin</span></Link>
+                                <Link to="/login" type="submit" class="btn" style={{ backgroundColor: "#012738", color: "white" }}><span>Login</span></Link>
                                 <a class="action-btn" href="#!"><i class="ico_message"></i><span></span></a>
                                 <a class="action-btn" href="#!"><i class="ico_notification"></i><span></span></a>
                                 <a class="profile" href="#!"><img src="assets/img/profile.png" alt="profile" /></a>
