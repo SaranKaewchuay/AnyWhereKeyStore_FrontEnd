@@ -98,104 +98,106 @@ class GamesStore extends React.Component {
   };
   render() {
     return (
-      <div  className="page-home">
-        <div>
-          <div className="page-content">
-            <main className="page-main">
-              <div className="widjet --filters">
-                <div className="widjet__head">
-                  <h3 className="uk-text-lead">Games Store</h3>
-                </div>
-                <div className="widjet__body">
-                  <div
-                    className="uk-grid uk-child-width-1-6@xl uk-child-width-1-3@l uk-child-width-1-2@s uk-flex-middle uk-grid-small"
-                    data-uk-grid
-                  >
-                    <div className="uk-width-1-1">
-                      <div className="search">
-                        <div className="search__input">
-                          <i className="ico_search"></i>
-                          <input
-                            type="search"
-                            name="gameName"
-                            placeholder="Search"
-                            onChange={this.searchChange}
-                          />
-                        </div>
-                        <div className="search__btn">
-                          <button type="button">
-                            <i className="ico_microphone"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
+      <div className="page-community">
+        <div className="page-home">
+          <div>
+            <div className="page-content">
+              <main className="page-main">
+                <div className="widjet --filters">
+                  <div className="widjet__head">
+                    <h3 className="uk-text-lead">Games Store</h3>
                   </div>
-                  <div class="mt-3 mr-4">
-                    <select
-                      class="form-control"
-                      name="gameCategory"
-                      onChange={this.handleChange}
+                  <div className="widjet__body">
+                    <div
+                      className="uk-grid uk-child-width-1-6@xl uk-child-width-1-3@l uk-child-width-1-2@s uk-flex-middle uk-grid-small"
+                      data-uk-grid
                     >
-                      <option value="All">All</option>
-                      <option value="Adventure">Adventure</option>
-                      <option value="Fighting">Fighting</option>
-                      <option value="Horror">Horror</option>
-                      <option value="RPG">RPG</option>
-                      <option value="Shooter">Shooter</option>
-                      <option value="Platformer">Platformer</option>
-                      <option value="Survival">Survival</option>
-                      <option value="Racing">Racing</option>
-                      <option value="Building">Building</option>
-                    </select>
-                  </div>
-                  <div class="uk-text-right mt-3">
-                    {this.state.data.length} items
-                  </div>
-                </div>
-              </div>
-              <div
-                className="uk-grid uk-child-width-1-6@xl uk-child-width-1-3@l uk-child-width-1-2@s uk-flex-middle uk-grid-small"
-                data-uk-grid
-              >
-                {this.state.data.map((item) => (
-                  <Link
-                    to={"/game-profile/" + item.gameNumber}
-                    style={{ textDecoration: "none", color: "inherit" }}
-                  >
-                    <div className="game-card">
-                      <div className="game-card__box">
-                        <div className="game-card__media">
-                          <img src={item.image_url1} />
-                        </div>
-                        <div className="game-card__info">
-                          {item.gameName}
-                          <ul class="game-profile-card__type">
-                            <li>
-                              <span>{item.gameCategory}</span>
-                            </li>
-                          </ul>
-                          <div className="game-card__rating-and-price">
-                            <div className="game-card__rating">
-                              <span>4.8</span>
-                              <i className="ico_star"></i>
-                            </div>
-                            <div className="game-card__price">
-                              <span>฿ {item.gamePrice} </span>
-                            </div>
+                      <div className="uk-width-1-1">
+                        <div className="search">
+                          <div className="search__input">
+                            <i className="ico_search"></i>
+                            <input
+                              type="search"
+                              name="gameName"
+                              placeholder="Search"
+                              onChange={this.searchChange}
+                            />
                           </div>
-                          <div className="game-card__bottom">
-                            <div className="game-card__platform">
-                              <i className="ico_windows"></i>
-                              <i className="ico_apple"></i>
-                            </div>
+                          <div className="search__btn">
+                            <button type="button">
+                              <i className="ico_microphone"></i>
+                            </button>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </Link>
-                ))}
-              </div>
-            </main>
+                    <div class="mt-3 mr-4">
+                      <select
+                        class="form-control"
+                        name="gameCategory"
+                        onChange={this.handleChange}
+                      >
+                        <option value="All">All</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Fighting">Fighting</option>
+                        <option value="Horror">Horror</option>
+                        <option value="RPG">RPG</option>
+                        <option value="Shooter">Shooter</option>
+                        <option value="Platformer">Platformer</option>
+                        <option value="Survival">Survival</option>
+                        <option value="Racing">Racing</option>
+                        <option value="Building">Building</option>
+                      </select>
+                    </div>
+                    <div class="uk-text-right mt-3">
+                      {this.state.data.length} items
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="uk-grid uk-child-width-1-6@xl uk-child-width-1-3@l uk-child-width-1-2@s uk-flex-middle uk-grid-small"
+                  data-uk-grid
+                >
+                  {this.state.data.map((item) => (
+                    <Link
+                      to={"/game-profile/" + item.gameNumber}
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <div className="game-card">
+                        <div className="game-card__box">
+                          <div className="game-card__media">
+                            <img src={item.image_url1} />
+                          </div>
+                          <div className="game-card__info">
+                            {item.gameName}
+                            <ul class="game-profile-card__type">
+                              <li>
+                                <span>{item.gameCategory}</span>
+                              </li>
+                            </ul>
+                            <div className="game-card__rating-and-price">
+                              <div className="game-card__rating">
+                                <span>4.8</span>
+                                <i className="ico_star"></i>
+                              </div>
+                              <div className="game-card__price">
+                                <span>฿ {item.gamePrice} </span>
+                              </div>
+                            </div>
+                            <div className="game-card__bottom">
+                              <div className="game-card__platform">
+                                <i className="ico_windows"></i>
+                                <i className="ico_apple"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </main>
+            </div>
           </div>
         </div>
       </div>
