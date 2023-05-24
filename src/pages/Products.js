@@ -53,7 +53,7 @@ class Products extends React.Component {
   render() {
     return (
       <div>
-        <div class="mt-150 ml-mr">
+        <div class="m-4" style={{ marginTop: '150px' }}>
           <div class="card shadow mb-4">
             <div class="card-header py-3">
               <div class="row">

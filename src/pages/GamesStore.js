@@ -88,7 +88,6 @@ class GamesStore extends React.Component {
     render() {
         return (
             <div className="page-store">
-                <div className="page-wrapper">
                     <div className="page-content">
                         <main className="page-main">
                             <div className="widjet --filters">
@@ -148,7 +147,6 @@ class GamesStore extends React.Component {
                         </main>
                     </div >
                 </div >
-            </div >
         )
     }
 }
