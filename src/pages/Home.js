@@ -39,7 +39,7 @@ class Home extends React.Component {
             <main className="page-main">
               <div className="uk-grid" data-uk-grid>
                 <div className="uk-width-2-3@xl">
-                  <h3 className="uk-text-lead">Recommended & Featured</h3>
+                  <h3 className="uk-text-lead ml-5">Recommended & Featured</h3>
                   <div className="js-recommend mt-5">
                     <div className="swiper">
                       <div className="swiper-wrapper">
@@ -267,7 +267,7 @@ class Home extends React.Component {
                   </div>
                 </div>
                 <div className="uk-width-1-3@xl">
-                  <h3 className="uk-text-lead">Trending Now</h3>
+                  <h3 className="uk-text-lead ml-5">Trending Now</h3>
                   <div className="js-trending">
                     <div className="swiper">
                       <div className="swiper-wrapper">
@@ -420,7 +420,7 @@ class Home extends React.Component {
                     </div>
                   </div>
                   <div className="uk-width-1-1">
-                    <h3 className="uk-text-lead">Most Popular</h3>
+                    <h3 className="uk-text-lead ml-5">Most Popular</h3>
                     <div className="js-popular">
                       <div className="swiper">
                         <div className="swiper-wrapper">
