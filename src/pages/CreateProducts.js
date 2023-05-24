@@ -56,7 +56,7 @@ class CreateProducts extends React.Component {
       return <Redirect to={this.state.redirect} />;
     }
     return (
-      <div class="m-3" style={{ paddingTop: "110px" }}>
+      <div class="m-4" style={{ paddingTop: "110px" }}>
         <div className="page-home">
             <div classNameName="row">
               <div classNameName="col-md-6">
