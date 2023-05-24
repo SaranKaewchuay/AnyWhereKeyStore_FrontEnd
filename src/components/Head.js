@@ -11,7 +11,7 @@ class Head extends React.Component {
               {/* <div class="page-header__menu-btn">
                 <button class="menu-btn ico_menu is-active"></button>
               </div> */}
-              <div class="page-header__logo">
+              <div class="page-header__logo ml-4">
                 <Link to="/" class="text-link">
                   <img src="assets/img/logo.png" alt="logo" />
                 </Link>
