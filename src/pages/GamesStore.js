@@ -104,7 +104,7 @@ class GamesStore extends React.Component {
               <main className="page-main">
                 <div className="widjet --filters">
                   <div className="widjet__head">
-                    <h3 className="uk-text-lead">Games Store</h3>
+                    <h3 className="uk-text-lead ml-3">Games Store</h3>
                   </div>
                   <div className="widjet__body">
                     <div
