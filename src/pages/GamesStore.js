@@ -98,9 +98,8 @@ class GamesStore extends React.Component {
   };
   render() {
     return (
-      <div class="m-5" style={{ paddingTop: '110px' }}>
+      <div class="m-2" style={{ paddingTop: '110px' }}>
         <div className="page-home">
-          <div>
             <div className="page-content">
               <main className="page-main">
                 <div className="widjet --filters">
@@ -200,7 +199,6 @@ class GamesStore extends React.Component {
             </div>
           </div>
         </div>
-      </div>
     );
   }
 }

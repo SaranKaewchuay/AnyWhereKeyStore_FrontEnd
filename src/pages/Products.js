@@ -53,7 +53,7 @@ class Products extends React.Component {
   render() {
     return (
       <div>
-        <div class="m-4" style={{ paddingTop: '110px' }}>
+        <div class="m-2" style={{ paddingTop: '110px' }}>
           <div class="card shadow mb-4">
             <div class="card-header py-3">
               <div class="row">
