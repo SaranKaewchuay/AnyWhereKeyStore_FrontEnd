@@ -98,7 +98,7 @@ class GamesStore extends React.Component {
   };
   render() {
     return (
-      <div class="page-home"  style={{ color: '#0a4275', marginTop:"110px"}}>
+      <div  className="container-xl fixed"  style={{ color: '#0a4275', marginTop:"110px"}}>
         <div>
           <div className="page-content">
             <main className="page-main">

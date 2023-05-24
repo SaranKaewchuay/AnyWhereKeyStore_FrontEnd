@@ -32,7 +32,7 @@ class Home extends React.Component {
     }
     render() {
         return (
-            <div className="page-home">
+            <div className="container-xl fixed">
                 <div className="page-wrapper">
                     <div className="page-content">
                         <main className="page-main">
