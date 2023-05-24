@@ -33,7 +33,7 @@ class Home extends React.Component {
   };
   render() {
     return (
-      <div class="m-2" style={{ paddingTop: "110px" }}>
+      <div class="m-3" style={{ paddingTop: "110px" }}>
         <div className="page-home">
           <div className="page-content">
             <main className="page-main">
