@@ -24,7 +24,7 @@ class Home extends React.Component {
     }
 
     getData = () => {
-        axios.get("http://localhost:8081/admin/products").then((res) => {
+        axios.get("https://difficult-girdle-fly.cyclic.app/admin/products").then((res) => {
             this.setState({ data: res.data.data });
         }).catch((error) => {
             console.log(error);

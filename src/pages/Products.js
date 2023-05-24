@@ -23,7 +23,7 @@ class Products extends React.Component {
         document.body.appendChild(scriptTag);
     }
     getData = () => {
-        axios.get("http://localhost:8081/admin/products").then((res) => {
+        axios.get("https://difficult-girdle-fly.cyclic.app/admin/products").then((res) => {
             this.setState({ data: res.data.data });
         }).catch((error) => {
             console.log(error);
@@ -32,7 +32,7 @@ class Products extends React.Component {
 
     handleDelete = (gameNumber) => {
         console.log(gameNumber);
-        axios.get('http://localhost:8081/admin/delete-products?gameNumber=' + gameNumber).then(res => {
+        axios.get('https://difficult-girdle-fly.cyclic.app/admin/delete-products?gameNumber=' + gameNumber).then(res => {
             console.log(res.data);
             if (res.data.result) {
                 this.getData();

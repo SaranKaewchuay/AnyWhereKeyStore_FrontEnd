@@ -27,7 +27,7 @@ class GamesProfile extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:8081/admin/edit-products/' + this.state.gameNumber).then(res => {
+        axios.get('https://difficult-girdle-fly.cyclic.app/admin/edit-products/' + this.state.gameNumber).then(res => {
             let data = res.data.data[0];
             console.log(data);
             this.setState({

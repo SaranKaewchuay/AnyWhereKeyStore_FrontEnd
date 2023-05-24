@@ -25,7 +25,7 @@ class UpdateProducts extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:8081/admin/edit-products/' + this.state.gameNumber).then(res => {
+    axios.get('https://difficult-girdle-fly.cyclic.app/admin/edit-products/' + this.state.gameNumber).then(res => {
       let data = res.data.data[0];
       console.log(data);
       this.setState({
@@ -58,7 +58,7 @@ class UpdateProducts extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:8081/admin/edit-products', this.state).then(res => {
+    axios.post('https://difficult-girdle-fly.cyclic.app/admin/edit-products', this.state).then(res => {
       console.log(res.data);
       if (res.data.result) {
         this.setState({ redirect: '/admin-product' });

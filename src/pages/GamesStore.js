@@ -28,7 +28,7 @@ class GamesStore extends React.Component {
     }
 
     getData = () => {
-        axios.get("http://localhost:8081/admin/products").then((res) => {
+        axios.get("https://difficult-girdle-fly.cyclic.app/admin/products").then((res) => {
             this.setState({ data: res.data.data });
         }).catch((error) => {
             console.log(error);
@@ -36,7 +36,7 @@ class GamesStore extends React.Component {
     }
 
     getByCategory = () => {
-        axios.get("http://localhost:8081/admin/getBy-category/" + this.state.gameCategory).then((res) => {
+        axios.get("https://difficult-girdle-fly.cyclic.app/admin/getBy-category/" + this.state.gameCategory).then((res) => {
             this.setState({ data: res.data.data });
         }).catch((error) => {
             console.log(error);
@@ -45,7 +45,7 @@ class GamesStore extends React.Component {
     }
 
     searchName = () => {
-        axios.get("http://localhost:8081/admin/getByName/" + this.state.gameName).then((res) => {
+        axios.get("https://difficult-girdle-fly.cyclic.app/admin/getByName/" + this.state.gameName).then((res) => {
             this.setState({ data: res.data.data });
         }).catch((error) => {
             console.log(error);
