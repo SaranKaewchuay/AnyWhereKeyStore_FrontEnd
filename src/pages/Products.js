@@ -53,7 +53,7 @@ class Products extends React.Component {
   render() {
     return (
       <div>
-        <div class="m-3" style={{ paddingTop: '110px' }}>
+        <div class="m-3" style={{ paddingTop: "110px" }}>
           <div class="card shadow mb-4">
             <div class="card-header py-3">
               <div class="row">
@@ -65,10 +65,7 @@ class Products extends React.Component {
                     to="/create-product"
                     type="submit"
                     class="btn mb-5"
-                    style={{
-                      backgroundColor: "#012738",
-                      color: "white",
-                    }}
+                    style={{ backgroundColor: "#012738", color: "white" }}
                   >
                     <i class="material-icons"></i> <span>Add New Products</span>
                   </Link>
@@ -129,7 +126,7 @@ class Products extends React.Component {
                             </button>
                           </Link>
                           <button
-                            className="btn"
+                            className="btn "
                             onClick={() => {
                               if (
                                 window.confirm(
