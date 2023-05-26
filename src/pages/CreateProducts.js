@@ -35,7 +35,8 @@ class CreateProducts extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:8081/admin/add-products', this.state).then(res => {
+    console.log("this.state = ",this.state)
+    axios.post('https://difficult-girdle-fly.cyclic.app/admin/add-products', this.state).then(res => {
       console.log(res.data);
       if (res.data.result) {
         this.setState({ redirect: '/admin-product' });
